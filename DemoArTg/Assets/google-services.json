@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "850278027546",
+    "firebase_url": "https://unity-b-default-rtdb.firebaseio.com",
+    "project_id": "unity-b",
+    "storage_bucket": "unity-b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850278027546:android:f9ea5a5498538996ac1ca3",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.DemoArTg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX2QaTbjwuw9a3b-ln-hbJJeHqYotfduY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850278027546:android:ca8b6e519034192eac1ca3",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX2QaTbjwuw9a3b-ln-hbJJeHqYotfduY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
