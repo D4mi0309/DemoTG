@@ -3,18 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Auth;
 using TMPro;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class EmailAuth : MonoBehaviour
 {
     FirebaseAuth auth;
     [SerializeField] TMP_InputField email;
     [SerializeField] TMP_InputField password;
+
+    private bool cargarHome = false;
     // Start is called before the first frame update
     void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
     }
 
+    void Update()
+{
+    if (cargarHome)
+    {
+        cargarHome = false;
+        SceneManager.LoadScene("Home_view");
+    }
+}
     public void SingUp()
     {
         auth.CreateUserWithEmailAndPasswordAsync(email.text, password.text).ContinueWith(task =>
@@ -32,8 +43,9 @@ public class NewBehaviourScript : MonoBehaviour
 
             // Firebase user has been created.
             Firebase.Auth.AuthResult result = task.Result;
-            Debug.LogFormat("Firebase user created successfully: {0} ({1})",
-                result.User.DisplayName, result.User.UserId);
+            Debug.LogFormat("Firebase user created successfully: {0} ({1})", result.User.DisplayName, result.User.UserId);
+
+            cargarHome = true;
         });
     }
 
@@ -53,8 +65,9 @@ public class NewBehaviourScript : MonoBehaviour
             }
 
             Firebase.Auth.AuthResult result = task.Result;
-            Debug.LogFormat("User signed in successfully: {0} ({1})",
-                result.User.DisplayName, result.User.UserId);
+            Debug.LogFormat("User signed in successfully: {0} ({1})", result.User.DisplayName, result.User.UserId);
+            
+            cargarHome = true;
         });
     }
 }
