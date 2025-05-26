@@ -34,4 +34,8 @@ public class NavegacionBotones : MonoBehaviour
         SceneManager.LoadScene("Home_view");
     }
 
+    public void NavegarAngelitas(){
+        SceneManager.LoadScene("Vuforia_test");
+    }
+
 }
