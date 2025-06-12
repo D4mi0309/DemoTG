@@ -20,12 +20,17 @@ public class EmailAuth : MonoBehaviour
     {
         auth = FirebaseAuth.DefaultInstance;
 
-        // Cifrar campos de contraseña
-        password.contentType = TMP_InputField.ContentType.Password;
-        confirmPassword.contentType = TMP_InputField.ContentType.Password;
+        if (password != null)
+        {
+            password.contentType = TMP_InputField.ContentType.Password;
+            password.ForceLabelUpdate();
+        }
 
-        password.ForceLabelUpdate();
-        confirmPassword.ForceLabelUpdate();
+        if (confirmPassword != null)
+        {
+            confirmPassword.contentType = TMP_InputField.ContentType.Password;
+            confirmPassword.ForceLabelUpdate();
+        }
     }
 
     void Update()
