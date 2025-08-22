@@ -250,10 +250,10 @@ RectTransform:
   m_Father: {fileID: 1135880880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.66555786, y: -870.4033}
-  m_SizeDelta: {x: -1.331, y: -1740.0867}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 368.91333}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &21013197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2281,7 +2281,7 @@ GameObject:
   - component: {fileID: 1943261834}
   - component: {fileID: 1943261833}
   m_Layer: 0
-  m_Name: Message_base
+  m_Name: Dialogue_textbase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2303,7 +2303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41, y: -79}
+  m_AnchoredPosition: {x: 33, y: -89}
   m_SizeDelta: {x: 549.2842, y: 120.4835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943261833
